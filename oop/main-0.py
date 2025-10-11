@@ -5,16 +5,16 @@ def main():
     my_library = Library()
 
     # Create book instances
-    book1 = Book("To Kill a Mockingbird", "Harper Lee")
-    ebook1 = EBook("Digital Fortress", "Dan Brown", 5)
-    printbook1 = PrintBook("The Catcher in the Rye", "J.D. Salinger", 277)
+    book1 = Book("Pride and Prejudice", "Jane Austen")
+    ebook1 = EBook("Snow Crash", "Neal Stephenson", 500)
+    printbook1 = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
-    # Add books to the library (composition)
+    # Add books to the library
     my_library.add_book(book1)
     my_library.add_book(ebook1)
     my_library.add_book(printbook1)
 
-    # List all books in the library
+    # List all books
     my_library.list_books()
 
 if __name__ == "__main__":
